@@ -86,9 +86,9 @@ mongoose.connect(MONGODB_URI)
   });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log('🚀 Taskletix Backend Server is running');
-  console.log(`📍 Server URL: http://localhost:${PORT}`);
+  console.log(`📍 Server URL: http://0.0.0.0:${PORT}`);
   console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`🔗 CORS Origin: ${CORS_ORIGIN}`);
   console.log('📝 API Endpoints:');
